@@ -11,3 +11,15 @@ var date = new Date();
 asMathableDate.call(date);
 date.addDay(42);
 ```
+
+## API
+
+```
+addYear(amount : int)
+addMonth(amount : int)
+addDay(amount : int)
+addHour(amount : int)
+addMinute(amount : int)
+addSecond(amount : int)
+addMilisecond(amount : int)
+```
