@@ -1,0 +1,27 @@
+{
+  "name": "asMathableDate",
+  "main": "asMathableDate.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/msilvagarcia/asMathableDate",
+  "authors": [
+    "Marcos Garcia <magaum@gmail.com>"
+  ],
+  "description": "Extending Date objects to add easier manipulation capabilities.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "date"
+  ],
+  "license": "Free",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jasmine-core": "~2.3.2"
+  }
+}
