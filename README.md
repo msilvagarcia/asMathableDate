@@ -21,5 +21,15 @@ addDay(amount : int)
 addHour(amount : int)
 addMinute(amount : int)
 addSecond(amount : int)
-addMilisecond(amount : int)
+addMillisecond(amount : int)
 ```
+
+## Testing
+
+Testing is done via Jasmine in browser. In console:
+
+```
+$ bower install
+```
+
+Then access ```[asMathableDate root]/test/index.html```
