@@ -4,12 +4,12 @@ var asMathableDate = (function () {
 	var MILISECONDS_IN_HOUR = 3600000;
 	var MILISECONDS_IN_MINUTE = 60000;
 	var MILISECONDS_IN_SECOND = 1000;
-	
+
 	function addYear (amount) {
 		if (amount === 0) { return ; }
 		this.setYear(this.getUTCFullYear() + amount);
 	}
-	
+
 	function addMonth (amount) {
 		if (amount === 0) { return ; }
 		var currentMonth = this.getUTCMonth();
@@ -25,39 +25,40 @@ var asMathableDate = (function () {
 		}
 		this.setMonth(currentMonth + amount);
 	}
-	
+
 	function addDay (amount) {
 		if (amount === 0) { return ; }
 		this.setTime(this.getTime() + amount * MILISECONDS_IN_DAY);
 	}
-	
+
 	function addHour (amount) {
 		if (amount === 0) { return ; }
 		this.setTime(this.getTime() + amount * MILISECONDS_IN_HOUR);
 	}
-	
+
 	function addMinute (amount) {
 		if (amount === 0) { return ; }
 		this.setTime(this.getTime() + amount * MILISECONDS_IN_MINUTE);
 	}
-	
+
 	function addSecond (amount) {
 		if (amount === 0) { return ; }
 		this.setTime(this.getTime() + amount * MILISECONDS_IN_SECOND);
 	}
-	
-	function addMilisecond (amount) {
+
+	function addMillisecond (amount) {
 		if (amount === 0) { return ; }
 		this.setTime(this.getTime() + amount);
 	}
-	
+
 	return function () {
 		this.addYear = addYear;
 		this.addMonth = addMonth;
 		this.addDay = addDay;
+		this.addDate = addDay;
 		this.addHour = addHour;
 		this.addMinute = addMinute;
 		this.addSecond = addSecond;
-		this.addMilisecond = addMilisecond;
+		this.addMillisecond = addMillisecond;
 	}
 })();
