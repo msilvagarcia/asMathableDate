@@ -32,4 +32,4 @@ Testing is done via Jasmine in browser. In console:
 $ bower install
 ```
 
-Then access ```[asMathableDate root]/test/index.html```
+Then access ```[asMathableDate root]/test/core/index.html```
